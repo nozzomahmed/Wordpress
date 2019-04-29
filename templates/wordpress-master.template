@@ -137,8 +137,7 @@ Parameters:
     Description: List of Availability Zones to use for the subnets in the VPC. Only
       two Availability Zones are used for this deployment, and the logical order of
       your selections is preserved
-      Type: List<AWS::EC2::AvailabilityZone::Name>
-      Default: ap-southeast-2a
+      Type: List<AWS::EC2::AvailabilityZone::Name> 
   BastionAMIOS:
     AllowedValues:
     - Amazon-Linux-HVM
