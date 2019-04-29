@@ -227,6 +227,7 @@ Parameters:
     MinLength: '8'
     NoEcho: 'True'
     Type: String
+    Default: Atk18Vat
   DBMultiAZ:
     AllowedValues:
     - 'true'
@@ -244,11 +245,13 @@ Parameters:
     MinLength: '8'
     NoEcho: 'true'
     Type: String
+    Default: Atk18Vat
   KeyPairName:
     Description: The name of an existing public/private key pair, which allows you
       to securely connect to your instance after it launches. Use 'bitnami' user for
       the ssh connection to the WordPress instances
     Type: AWS::EC2::KeyPair::KeyName
+    Default: test-key
   PrivateSubnet1CIDR:
     AllowedPattern: "^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(\\/(1[6-9]|2[0-8]))$"
     ConstraintDescription: CIDR block parameter must be in the form x.x.x.x/16-28
