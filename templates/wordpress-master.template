@@ -78,13 +78,13 @@ Metadata:
       DBInstanceClass:
         default: Database Instance Size
       DBMasterUserPassword:
-        default: Atk18Vat
+        default: Database Admin Password
       DBMultiAZ:
         default: Multi-AZ Database
       WordpressAdminPassword:
-        default: Atk18Vat
+        default: Admin Password
       KeyPairName:
-        default: test-key.ppk
+        default: SSH KeyPair Name
       PrivateSubnet1CIDR:
         default: Private Subnet 1 CIDR
       PrivateSubnet2CIDR:
