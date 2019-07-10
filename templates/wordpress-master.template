@@ -135,10 +135,9 @@ Parameters:
     Type: String
     Default: nozzom.ahmed@gmail.com
   AvailabilityZones:
-    Description: List of Availability Zones to use for the subnets in the VPC. Only
-      two Availability Zones are used for this deployment, and the logical order of
-      your selections is preserved
-      Type: List<AWS::EC2::AvailabilityZone::Name> 
+      Type: List<AWS::EC2::AvailabilityZone::Name>
+      Description: Comma delimited list of availability zones.
+      Default: ap-southeast-2a,ap-southeast-2b
   BastionAMIOS:
     AllowedValues:
     - Amazon-Linux-HVM
